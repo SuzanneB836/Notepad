@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bar">
+        Online Notes
+        <br> <br>
+        <label for="colorSelect">Text Color:</label>
+        <select id="colorSelect">
+            <option value="#000000">Black</option>
+            <option value="#C2C2C2">Gray</option>
+            <option value="#FF2D00">Red</option>
+            <option value="#FF8000">Orange</option>
+            <option value="#FFD500">Yellow</option>
+            <option value="#78FF00">Green</option>
+            <option value="#00D4FF">Blue</option>
+            <option value="#BD00FF">Purple</option>
+        </select>
+
+        <br>
+        <label for="fontSize">Text Size:</label>
+        <select id="fontSize">
+            <option value="12px">12</option>
+            <option value="20px">20</option>
+            <option value="40px">40</option>
+            <option value="60px">60</option>
+            <option value="80px">80</option>
+            <option value="100px">100</option>
+        </select>
+
+        <br>
+        <label for="fontSelect">Font Family:</label>
+        <select id="fontSelect">
+            <option value="Arial, sans-serif">Arial</option>
+            <option value="Verdana, sans-serif">Verdana</option>
+            <option value="Times New Roman, serif">Times New Roman</option>
+        </select>
+    </div>
+    <div class="container">
+        <textarea id="textarea-notes" placeholder="Start typing..."></textarea>
+    </div>
+
+    <div class="up-download">
+        <button class="action-button" id="downloadButton">Download</button>
+        <button class="action-button" id="uploadButton">Upload</button>
+        <input type="file" id="uploadFile" accept=".json" class="inputfile">
+    </div>
+    
+    <!--When reloading the page, the formatting should stay the same.
+        Clean up the code
+        Fix the width of the labels
+    -->
+
+    <script src="script.js"></script>
+</body>
+</html>
